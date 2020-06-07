@@ -1,0 +1,40 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <% result.items.forEach(function(item){ %>
+            <form action="/saveEdit" method="POST">
+                <fieldset class="editFieldset">
+                    <input type="hidden" name="itemId" value="<%= item._id %>">
+                    <input type="hidden" name="itemPrice" value="<%= item.baseprice %>">
+                    <input type="hidden" name="itemCrust" value="<%= item.crust %>">
+                    <fieldset class="editFieldset">
+                        <p> SELECT QUANTITY: (You had originally selected <%= item.quantity %>)</p>
+                        <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+            <% }); %>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+<% include partials/footer %>

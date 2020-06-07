@@ -1,0 +1,318 @@
+/* 1 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4510"),
+    "title" : "Special Italian Pizza",
+    "image" : "pizza-1.jpg",
+    "description" : "Italian Pizza is a savory dish of Italian origin, consisting of a usually round, flattened base",
+    "price" : "$2.50",
+    "category" : "pizza",
+    "activeflag" : "0"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4513"),
+    "title" : "Greek Pizza",
+    "image" : "pizza-2.jpg",
+    "description" : "Greek Pizza is a savory dish of Italian origin, consisting of a usually round, flattened base",
+    "price" : "$2.90",
+    "category" : "pizza",
+    "activeflag" : "1"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4516"),
+    "title" : "Caucasian Pizza",
+    "image" : "pizza-3.jpg",
+    "description" : "Caucasian Pizza is a savory dish of Italian origin, consisting of a usually round, flattened base",
+    "price" : "$3.50",
+    "category" : "pizza",
+    "activeflag" : "1"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4519"),
+    "title" : "American Pizza 123",
+    "image" : "pizza-4.jpg",
+    "description" : "American Pizza is a savory dish of Italian origin, consisting of a usually round, flattened base",
+    "price" : "$2.90",
+    "category" : "pizza",
+    "activeflag" : "1"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae451c"),
+    "title" : "Tomato Pie",
+    "image" : "pizza-5.jpg",
+    "description" : "Tomato Pie is a savory dish of Italian origin, consisting of a usually round, flattened base",
+    "price" : "$2.20",
+    "category" : "pizza",
+    "activeflag" : "1"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae451f"),
+    "title" : "Margarita Pizza",
+    "image" : "pizza-6.jpg",
+    "description" : "Margarita Pizza is a savory dish of Italian origin, consisting of a usually round, flattened base",
+    "price" : "$3.00",
+    "category" : "pizza",
+    "activeflag" : "1"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4522"),
+    "title" : "Fettuccine Alfredo",
+    "image" : "pasta-1.jpg",
+    "description" : "Fettuccine Alfredo or fettuccine al burro is an Italian pasta dish of fettuccine tossed with butter",
+    "price" : "$3.20",
+    "category" : "pasta",
+    "activeflag" : "1"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4525"),
+    "title" : "Cheese Alfredo",
+    "image" : "pasta-2.jpg",
+    "description" : "Cheese Alfredo is an Italian pasta dish of fettuccine tossed with butter and Parmesan cheese",
+    "price" : "$3.20",
+    "category" : "pasta",
+    "activeflag" : "1"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4528"),
+    "title" : "Cheese Ravioli",
+    "image" : "pasta-3.jpg",
+    "description" : "Cheese Ravioli is an Italian pasta dish of fettuccine tossed with butter and Parmesan cheese",
+    "price" : "$2.50",
+    "category" : "pasta",
+    "activeflag" : "1"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae452b"),
+    "title" : "Chicken Parmigiana",
+    "image" : "pasta-4.jpg",
+    "description" : "Chicken Parmigiana is an Italian pasta dish of fettuccine tossed with butter and Parmesan cheese",
+    "price" : "$4.00",
+    "category" : "pasta",
+    "activeflag" : "1"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae452e"),
+    "title" : "Five Cheese Ziti al Forno",
+    "image" : "pasta-5.jpg",
+    "description" : "Five Cheese Ziti al Forno is an Italian pasta dish of fettuccine tossed with butter and Parmesan cheese",
+    "price" : "$4.20",
+    "category" : "pasta",
+    "activeflag" : "1"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4531"),
+    "title" : "Creamy Mushroom Ravioli",
+    "image" : "pasta-6.jpg",
+    "description" : "Creamy Mushroom Ravioli is an Italian pasta dish of fettuccine tossed with butter and Parmesan cheese",
+    "price" : "$4.50",
+    "category" : "pasta",
+    "activeflag" : "1"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4534"),
+    "title" : "Cheese Burger",
+    "image" : "burger-1.jpg",
+    "description" : "A cheeseburger is a hamburger topped with cheese. A cheeseburger may include toppings, such as lettuce, tomato",
+    "price" : "$2.50",
+    "category" : "burger",
+    "activeflag" : "1"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4537"),
+    "title" : "Chilli cheese Burger",
+    "image" : "burger-2.jpg",
+    "description" : "A cheeseburger is a hamburger topped with cheese. A cheeseburger may include toppings, such as lettuce, tomato",
+    "price" : "$3.00",
+    "category" : "burger",
+    "activeflag" : "1"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae453a"),
+    "title" : "Salmon Burger",
+    "image" : "burger-3.jpg",
+    "description" : "A cheeseburger is a hamburger topped with cheese. A cheeseburger may include toppings, such as lettuce, tomato",
+    "price" : "$3.00",
+    "category" : "burger",
+    "activeflag" : "1"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae453d"),
+    "title" : "Cheese bacon Burger",
+    "image" : "burger-4.jpg",
+    "description" : "A cheeseburger is a hamburger topped with cheese. A cheeseburger may include toppings, such as lettuce, tomato",
+    "price" : "$3.50",
+    "category" : "burger",
+    "activeflag" : "1"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4540"),
+    "title" : "Cheese ham Burger",
+    "image" : "burger-5.jpg",
+    "description" : "A cheeseburger is a hamburger topped with cheese. A cheeseburger may include toppings, such as lettuce, tomato",
+    "price" : "$3.50",
+    "category" : "burger",
+    "activeflag" : "1"
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4543"),
+    "title" : "Double Cheese Burger",
+    "image" : "burger-6.jpg",
+    "description" : "A cheeseburger is a hamburger topped with cheese. A cheeseburger may include toppings, such as lettuce, tomato",
+    "price" : "$4.00",
+    "category" : "burger",
+    "activeflag" : "1"
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4546"),
+    "title" : "Pineapple juice",
+    "image" : "drink-1.jpg",
+    "description" : "Pineapple juice is a liquid made from pressing the natural liquid from the pulp of the pineapple tropical plant.",
+    "price" : "$3.00",
+    "category" : "drink",
+    "activeflag" : "1"
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4549"),
+    "title" : "Grapefruit juice",
+    "image" : "drink-2.jpg",
+    "description" : "Grapefruit juice is a liquid made from pressing the natural liquid from the pulp of the pineapple tropical plant.",
+    "price" : "$3.00",
+    "category" : "drink",
+    "activeflag" : "1"
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae454c"),
+    "title" : "apple juice",
+    "image" : "drink-3.jpg",
+    "description" : "apple juice is a liquid made from pressing the natural liquid from the pulp of the apple tropical plant.",
+    "price" : "$3.00",
+    "category" : "drink",
+    "activeflag" : "1"
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae454f"),
+    "title" : "Sweet lime juice",
+    "image" : "drink-4.jpg",
+    "description" : "Sweet lime juice is a liquid made from pressing the natural liquid from the pulp of the sweet lime tropical plant.",
+    "price" : "$3.00",
+    "category" : "drink",
+    "activeflag" : "1"
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4552"),
+    "title" : "Cranberry juice",
+    "image" : "drink-5.jpg",
+    "description" : "Cranberry juice is a liquid made from pressing the natural liquid from the pulp of the cranberry tropical plant.",
+    "price" : "$3.00",
+    "category" : "drink",
+    "activeflag" : "1"
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("5de5da17cdc8225e32ae4555"),
+    "title" : "Watermelon juice",
+    "image" : "drink-6.jpg",
+    "description" : "Watermelon juice is a liquid made from pressing the natural liquid from the pulp of the watermelon tropical plant.",
+    "price" : "$3.00",
+    "category" : "drink",
+    "activeflag" : "1"
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("5de6a7d1cb6b9c3dc08341cd"),
+    "title" : "Chef's Special Pizza",
+    "image" : "pizza-8.jpg",
+    "description" : "kuch toh hai yeh pizza",
+    "price" : "$10",
+    "category" : "pizza",
+    "activeflag" : "0"
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("5de6a93a034f8a356c389f82"),
+    "title" : "Special Pizza",
+    "image" : "pizza-1.jpg",
+    "description" : "pizza pizza",
+    "price" : "$10",
+    "category" : "pizza",
+    "activeflag" : "1"
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("5de6ae3a3a14cf3c7ccaf0dd"),
+    "title" : "jenila ka jala pizza",
+    "image" : "pizza-7.jpg",
+    "description" : "maat khana yeh",
+    "price" : "$0.00",
+    "category" : "pizza",
+    "activeflag" : "0"
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("5de8321c3a14cf3c7ccaf0de"),
+    "title" : "yeh Pizza nahi",
+    "image" : "person_4.jpg",
+    "description" : "vahi ki yeh pizza nahi",
+    "price" : "$0.0",
+    "category" : "Pizza",
+    "activeflag" : "1"
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("5de832a03a14cf3c7ccaf0df"),
+    "title" : "test",
+    "image" : "person_4.jpg",
+    "description" : "test",
+    "price" : "10",
+    "category" : "pizza",
+    "activeflag" : "0"
+}

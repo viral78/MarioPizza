@@ -1,0 +1,49 @@
+<% include ../partials/header %>
+<% console.log("Inside new ejs yaaaayyy"); %>
+
+<div class="container">
+<h1>New Dish</h1>
+
+<form action="/menu" method="POST">
+
+<h5>Title</h5>
+<div class="form-group">
+<input type="text" name="title" class="form-control">
+</div>
+
+<h5>Image</h5>
+<div class="form-group">
+<input type="file" name="image" class="form-control-file">
+</div>
+
+<h5>Description</h5>
+<div class="form-group">
+<textarea name="description" class="form-control"></textarea>
+</div>
+
+<h5>Price</h5>
+<div class="form-group">
+<input type="text" name="price" class="form-control">
+</div>
+
+<h5>Category</h5>
+<div class="form-group">
+<input type="text" name="category" class="form-control">
+</div>
+
+<h5>Activeflag</h5>
+<div class="form-group">
+<input type="text" name="activeflag" class="form-control">
+</div>
+
+<div class="form-group">
+<button type="Submit" class="btn btn-info">Save</button>
+</div>
+
+</form>
+
+<a href="/menu">Cancel</a>
+
+
+</div>
+<% include ../partials/footer %>

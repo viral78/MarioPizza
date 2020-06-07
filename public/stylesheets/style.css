@@ -1,0 +1,56 @@
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+} */
+
+.logout-menu {
+  background-color: #121618 !important;
+  margin-top: 0px;
+}
+
+.logout-menu-item {
+  font-size: 14px;
+}
+
+.logout-menu-item .nav-link:hover, .chef-names {
+  color: #fac564 !important;
+}
+
+.item-toppings,.item-name,.item-crust {
+  margin-bottom: 0px !important;
+}
+.item-crust,.item-toppings,.item-details {
+  font-size: 13px !important;
+}
+
+.order-history-table {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #32383e;
+}
+
+.menu-pagination {
+  display: inline-block;
+}
+
+.menu-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-paging {
+  border-style: dashed !important;
+  border-radius: 15px;
+}
+
+.topping-modal-content {
+  background-color: #212529;
+}
+
+.checkoutBtn{
+  float: right;
+  margin-bottom: 20px;
+}

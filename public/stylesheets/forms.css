@@ -1,0 +1,19 @@
+label {
+    font-size: 18px;
+}
+
+.form-control {
+    font-size: 15px;
+}
+
+.pwd-match-info {
+    color: red;
+}
+
+.pwd-match {
+    display: none;
+}
+.editFieldset {
+    padding: 10px;
+    border: 1px solid;
+}

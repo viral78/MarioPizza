@@ -1,0 +1,172 @@
+<div class="row no-gutters d-flex">
+
+    <% items.forEach(function(item){ %>
+    <% if (item.activeflag==1) { %>
+    <div class="col-lg-4 d-flex ftco-animate fadeInUp ftco-animated">
+        <div class="services-wrap d-flex">
+            <a href="#" class="img" style="background-image: url(/images/template/images/<%= item.image %>);"></a>
+            <div class="text p-4">
+                <h3><%= item.title %></h3>
+                <p><%= item.description %></p>
+                <p class="price"><span><%= item.price %></span>
+                    <% if (user) { var itemValue = item.title+"::"+item.price+"::"+item.category+"::"+user._id; %>
+                    <a href="#" class="ml-2 btn btn-white btn-outline-white orderButton"
+                        data-value="<%= itemValue %>">Order</a>
+                    <% } else { %>
+                    <a href="/login" class="ml-2 btn btn-white btn-outline-white">Login
+                        To Order</a>
+                    <% } %>
+                </p>
+                <% if (user && user.isAdmin) { %> 
+                        <a class="btn btn-warning" href="/menu/<%= item._id %>/edit" role="button">Edit this dish</a>
+                        <form action="/menu/<%= item._id %>?_method=DELETE" method="POST">
+                            <button type="submit" class="btn btn-danger">Delete Dish</button>
+                        </form>
+                    <% } %>
+            </div>
+        </div>
+    </div>
+    <% } %>
+    <% }); %>
+
+
+    <% if (user) { %>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content topping-modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PIZZA BUILDER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addCartForm">
+                        <input type="hidden" id="userId" name="userId" value="<%= user._id %>">
+                        <input type="hidden" id="itemName" name="itemName" value="3487">
+                        <input type="hidden" id="itemPrice" name="itemPrice" value="3487">
+                        <div class="toppings">
+                            <div class="form-check">
+                                <p>CHOOSE YOUR TOPPINGS </p>
+                                <ul style="list-style-type:none;">
+                                    <li><input type="checkbox" class="form-check-input" id="exampleCheck1"
+                                            name="veggies" value="Jalapeno"></label>Jalapeno Peppers</li>
+                                    <li><input type="checkbox" class="form-check-input" id="exampleCheck2"
+                                            name="veggies" value="Onions"></label>Onions</li>
+                                    <li><input type="checkbox" class="form-check-input" id="exampleCheck3"
+                                            name="veggies" value="Banana Peppers">Banana Peppers</label></li>
+                                    <li><input type="checkbox" class="form-check-input" id="exampleCheck4"
+                                            name="veggies" value="Tomatoes">Diced tomato</label></li>
+                                    <li><input type="checkbox" class="form-check-input" id="exampleCheck5"
+                                            name="veggies" value="Black Olives">Black Olives</label></li>
+                                    <li><input type="checkbox" class="form-check-input" id="exampleCheck6"
+                                            name="veggies" value="Green Olives">Green Olives</label></li>
+                                    <li><input type="checkbox" class="form-check-input" id="exampleCheck7"
+                                            name="veggies" value="Green Peppers">Green Peppers</label></li>
+                                    <li><input type="checkbox" class="form-check-input" id="exampleCheck8"
+                                            name="veggies" value="Mushrooms">Mushrooms</label></li>
+                                </ul>
+                                <p> CHOOSE YOUR CRUST </p>
+                                <div class="radio1">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" value="BROOKLYN STYLE"
+                                                checked>BROOKLYN
+                                            STYLE</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" value="HAND TOSSED">HAND
+                                            TOSSED</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" value="CRUNCHY THIN CRUST">CRUNCHY
+                                            THIN CRUST</label>
+                                    </div>
+                                </div>
+                                <p> CHOOSE YOUR SIZE </p>
+                                <div class="radio2">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio1" value="SMALL 10" checked>SMALL
+                                            10"</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio1" value="MEDIUM 12">MEDIUM
+                                            12"</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio1" value="LARGE 14">LARGE
+                                            14"</label>
+                                    </div>
+                                </div>
+                                <br>
+                                <p> SELECT QUANTITY:</p>
+                                <select name="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="addCartBtn">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content topping-modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">ITEM BUILDER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addOtherCartForm">
+                        <input type="hidden" id="userId" name="userId" value="<%= user._id %>">
+                        <input type="hidden" id="itemName" name="itemName" value="3487">
+                        <input type="hidden" id="itemPrice" name="itemPrice" value="3487">
+                        <div class="toppings">
+                            <div class="form-check">
+                                <p> SELECT QUANTITY:</p>
+                                <select name="quantity" id="quantSelect">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="addOtherCartBtn">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% } %>
+</div>
+<% if (user && user.isAdmin) { %>
+    <a class="btn btn-info" href="/menu/new" role="button"> Add a new dish</a>
+    <% } %>

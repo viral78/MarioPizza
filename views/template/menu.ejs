@@ -1,0 +1,97 @@
+<% include ../partials/header %>
+
+<section class="home-slider owl-carousel img" style="background-image: url(/images/template/images/bg_1.jpg);">
+
+	<div class="slider-item" style="background-image: url(/images/template/images/bg_3.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row slider-text justify-content-center align-items-center">
+
+				<div class="col-md-7 col-sm-12 text-center ftco-animate">
+					<h1 class="mb-3 mt-5 bread">Our Menu</h1>
+					<p class="breadcrumbs"><span class="mr-2"><a href="/">Home</a></span> <span>Menu</span>
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section ftco-animate text-center">
+				<h2 class="mb-4">Our Menu</h2>
+				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+					live the blind texts.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Search & Pagination -->
+	<div class="container menu-container">
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-6 text-center">
+				<form class="form-inline">
+					<div class="form-group">
+						<h4>Name: </h4>
+						<input type="text" name="search" id="searchField" placeholder="Enter dish name"
+							class="form-control">
+						<h4>Category:</h4>
+						<select id="filterField" name="filter" class="form-control">
+							<option value="" selected>Any</option>
+							<option value="pizza" >Pizza</option>
+							<option value="pasta">Pasta</option>
+							<option value="burger">Burger</option>
+							<option value="drink">Drink</option>
+						</select>
+
+						<a class="btn btn-primary" id="searchSubmit" style="background-color:transparent">Search</a>
+					</div>
+				</form>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-6 text-center">
+				<nav aria-label="Menu navigation">
+					<ul class="pagination menu-pagination">
+						<div class="row">
+							<div class="col-3">
+								<li class="page-item"><a class="ml-2 btn btn-white btn-outline-white menu-paging"
+										id="pizzaLink">Pizzas</a></li>
+							</div>
+							<div class="col-3">
+								<li class="page-item"><a class="ml-2 btn btn-white btn-outline-white menu-paging"
+										id="pastaLink">Pastas</a></li>
+							</div>
+							<div class="col-3">
+								<li class="page-item"><a class="ml-2 btn btn-white btn-outline-white menu-paging"
+										id="burgerLink">Burgers</a></li>
+							</div>
+							<div class="col-3">
+								<li class="page-item"><a class="ml-2 btn btn-white btn-outline-white menu-paging"
+										id="drinkLink">Drinks</a></li>
+							</div>
+						</div>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-3"></div>
+		</div>
+
+	</div>
+
+
+	<div class="container-wrap dynamic-menu-container">
+		<% include ../menuPaging %>
+	</div>
+
+
+
+
+
+	<% include ../partials/footer %>

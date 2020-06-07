@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <title>Pizza - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+    <link rel="stylesheet" href="/stylesheets/template/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/template/css/animate.css">
+
+    <link rel="stylesheet" href="/stylesheets/template/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/stylesheets/template/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/stylesheets/template/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="/stylesheets/template/css/aos.css">
+
+    <link rel="stylesheet" href="/stylesheets/template/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/stylesheets/template/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/stylesheets/template/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="/stylesheets/template/css/flaticon.css">
+    <link rel="stylesheet" href="/stylesheets/template/css/icomoon.css">
+    <link rel="stylesheet" href="/stylesheets/template/css/style.css">
+    <link rel="stylesheet" href="/stylesheets/forms.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/"><span class="flaticon-pizza-1 mr-1"></span>Mario
+                Bros<br><small>Pizza</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+                    <% if (!user) { %>
+
+                    <li class="nav-item"><a href="/login" class="nav-link">Log In</a></li>
+                    <% } else { %>
+
+                    <li class="nav-item"><a href="/orderHistory/<%= user._id %>" class="nav-link">Previous Orders</a>
+                    </li>
+                    <li class="nav-item"><a href="/showCart/<%= user._id %>" class="nav-link">Your Cart</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Welcome, <%= user.username %> <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu text-center logout-menu">
+                            <li class="logout-menu-item"><a href="/logout" class="nav-link">Log Out</a></li>
+                        </ul>
+                    </li>
+
+
+                    <% } %>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->

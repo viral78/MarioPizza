@@ -1,0 +1,95 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <% result.items.forEach(function(item){ %>
+            <form action="/saveEdit" method="POST">
+                <fieldset class="editFieldset">
+                    <input type="hidden" name="itemId" value="<%= item._id %>">
+                    <input type="hidden" name="itemPrice" value="<%= item.baseprice %>">
+                    <fieldset class="editFieldset">
+                        <p>CHOOSE YOUR TOPPINGS (You had originally selected <%= item.toppings %>)</p>
+                        <ul style="list-style-type:none;">
+                            <li><input type="checkbox" class="form-check-input" id="exampleCheck1" name="veggies"
+                                    value="Jalapeno"></label>Jalapeno Peppers</li>
+                            <li><input type="checkbox" class="form-check-input" id="exampleCheck2" name="veggies"
+                                    value="Onions"></label>Onions</li>
+                            <li><input type="checkbox" class="form-check-input" id="exampleCheck3" name="veggies"
+                                    value="Banana Peppers">Banana Peppers</label></li>
+                            <li><input type="checkbox" class="form-check-input" id="exampleCheck4" name="veggies"
+                                    value="Tomatoes">Diced tomato</label></li>
+                            <li><input type="checkbox" class="form-check-input" id="exampleCheck5" name="veggies"
+                                    value="Black Olives">Black Olives</label></li>
+                            <li><input type="checkbox" class="form-check-input" id="exampleCheck6" name="veggies"
+                                    value="Green Olives">Green Olives</label></li>
+                            <li><input type="checkbox" class="form-check-input" id="exampleCheck7" name="veggies"
+                                    value="Green Peppers">Green Peppers</label></li>
+                            <li><input type="checkbox" class="form-check-input" id="exampleCheck8" name="veggies"
+                                    value="Mushrooms">Mushrooms</label></li>
+                        </ul>
+                    </fieldset>
+                    <br>
+                    <fieldset class="editFieldset">
+                        <p> CHOOSE YOUR CRUST (You had originally selected <%= item.crust %>)</p>
+                        <div class="radio1">
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" value="BROOKLYN STYLE" checked>BROOKLYN
+                                    STYLE</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" value="HAND TOSSED">HAND
+                                    TOSSED</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" value="CRUNCHY THIN CRUST">CRUNCHY
+                                    THIN CRUST</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="editFieldset">
+                        <p> CHOOSE YOUR SIZE (You had originally selected <%= item.size %>) </p>
+                        <div class="radio2">
+                            <div class="radio">
+                                <label><input type="radio" name="optradio1" value="SMALL 10" checked>SMALL
+                                    10"</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio1" value="MEDIUM 12">MEDIUM 12"</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio1" value="LARGE 14">LARGE 14"</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="editFieldset">
+                        <p> SELECT QUANTITY: (You had originally selected <%= item.quantity %>)</p>
+                        <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+            <% }); %>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+<% include partials/footer %>
